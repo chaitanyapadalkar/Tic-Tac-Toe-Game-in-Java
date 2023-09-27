@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 public class Main{
@@ -19,7 +18,7 @@ public class Main{
             System.out.println();
             printBoard(board);
             System.out.println();
-            
+
             System.out.print("Player " + player + " enter: ");
 
             int row = sc.nextInt();
@@ -40,6 +39,7 @@ public class Main{
                 System.out.println("Invalid move. Try Again");
             }
         }
+        sc.close();
     }
 
     public static void printBoard(char[][] board){
